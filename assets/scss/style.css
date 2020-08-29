@@ -10891,6 +10891,10 @@ body.search .entry {
 ================================ */
 /** Hero Section
 ================================ */
+#portrait-section #wstPortraitSlider .carousel-inner #portrait-item-one #portrait-hero .row .card-body-wrapper .card-body h1 {
+  text-transform: uppercase;
+}
+
 .zindex-btn {
   z-index: 9999;
   position: relative;

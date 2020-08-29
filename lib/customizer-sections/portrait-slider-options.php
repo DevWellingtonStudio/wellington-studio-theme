@@ -25,6 +25,59 @@ $wp_customize -> add_control (
 		)
 	)
 );
+
+// Portrait Slider #1 Title Color
+$wp_customize->add_setting ( 'slider1_title_color', array(
+	'default'						=> '#fff',
+	'type'								=> 'theme_mod',
+	'sanitize_callback'	=> 'sanitize_hex_color',
+
+));
+// Portrait Slider #1 Title Color
+$wp_customize -> add_control (
+	new WP_Customize_Color_Control (
+		$wp_customize,
+		'slider1_title_color', array(
+			'label'			=> __('Slider #1 Title Color', 'bootstrap-for-genesis' ),
+			'priority'		=>  10,
+			'section'		=> 'portrait-slider',
+			'settings'	=> 'slider1_title_color'
+		)
+	)
+);
+// Portrait Slider #1 Text Color
+$wp_customize->add_setting ( 'slider1_text_color', array(
+	'default'						=> '#fff',
+	'type'								=> 'theme_mod',
+	'sanitize_callback'	=> 'sanitize_hex_color',
+
+));
+// Portrait Slider #1 Text Color
+$wp_customize -> add_control (
+	new WP_Customize_Color_Control (
+		$wp_customize,
+		'slider1_text_color', array(
+			'label'			=> __('Slider #1 Text Color', 'bootstrap-for-genesis' ),
+			'priority'		=>  10,
+			'section'		=> 'portrait-slider',
+			'settings'	=> 'slider1_text_color'
+		)
+	)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Portrait Slider #1 Title
 $wp_customize->add_setting( 'p-slider-title1', array(
 	'default'	=>	'',
