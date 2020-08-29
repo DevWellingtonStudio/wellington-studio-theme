@@ -24,6 +24,38 @@ $wp_customize -> add_control (
 		)
 	)
 );
+// Sub-Nav Font Hover Color
+$wp_customize->add_setting ( 'subnav_hover', array(
+	'default'						=> '#000',
+	'type'								=> 'theme_mod',
+	'sanitize_callback'	=> 'sanitize_hex_color',
+
+));
+// Sub-Nav Background Font Picker
+$wp_customize -> add_control (
+	new WP_Customize_Color_Control (
+		$wp_customize,
+		'subnav_hover', array(
+			'label'			=> __('Sub Nav Font Hover Color', 'bootstrap-for-genesis' ),
+			'priority'		=>  10,
+			'section'		=> 'subNav',
+			'settings'	=> 'subnav_hover'
+		)
+	)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Sub-Nav Background Color Picker
 $wp_customize->add_setting ( 'subnav_bgcolor', array(
 	'default'						=> '#ccc',
