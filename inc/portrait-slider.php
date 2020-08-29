@@ -20,7 +20,7 @@
 				<?php $p_slider_text1 = get_theme_mod('p-slider-text1'); ?>
 				<p class="card-text"><?php if($p_slider_text1 !== ''){echo $p_slider_text1;} ?></p>
 				<?php $port1_btn_url = get_theme_mod('port1_btn_url'); ?>
-				<?php if($port1_btn_url !== ''){echo '<a href="' . $port1_btn_url . '" title="Read More"><button type="button" class="zindex-btn btn btn-dark"><h5>Find Out More...</h5></button></a>';} ?>
+				<?php if($port1_btn_url !== ''){echo '<a href="' . $port1_btn_url . '" title="Read More"><button type="button" class="zindex-btn btn btn-1"><h5>Find Out More...</h5></button></a>';} ?>
 			 </div>
 			</div>
 			<div class="col-md-6 portrait-image">
@@ -44,7 +44,7 @@
 			   <?php $p_slider_text2 = get_theme_mod('p-slider-text2'); ?>
 				<p class="card-text"><?php if($p_slider_text2 !== ""){echo $p_slider_text2;} ?></p>
 				<?php $port2_btn_url = get_theme_mod('port2_btn_url'); ?>
-				<?php if($port2_btn_url !== ''){echo '<a href="' . $port2_btn_url . '" title="Read More"><button type="button" class="zindex-btn btn btn-dark"><h5>Read More Here...</h5></button></a>';} ?>
+				<?php if($port2_btn_url !== ''){echo '<a href="' . $port2_btn_url . '" title="Read More"><button type="button" class="zindex-btn btn btn-2"><h5>Read More Here...</h5></button></a>';} ?>
 			 </div>
 			</div>
 		 </div>
@@ -60,7 +60,7 @@
 			   <?php $p_slider_text3 = get_theme_mod('p-slider-text3'); ?>
 				<p class="card-text"><?php if($p_slider_text3 !== ''){echo $p_slider_text3;} ?></p>
 				<?php $port3_btn_url = get_theme_mod('port3_btn_url'); ?>
-				<?php if($port3_btn_url !== ''){ echo '<a href="' . $port3_btn_url . '" title="Read More"><button type="button" class="zindex-btn btn btn-dark"><h5>Read More...</h5></button></a>';} ?>
+				<?php if($port3_btn_url !== ''){ echo '<a href="' . $port3_btn_url . '" title="Read More"><button type="button" class="zindex-btn btn btn-3"><h5>Read More...</h5></button></a>';} ?>
 			 </div>
 			</div>
 			<div class="col-md-6 portrait-image">
@@ -72,12 +72,12 @@
 	 </div>
 	</div>
  </div>
- <a class="carousel-control-prev" href="#wstPortraitSlider" role="button" data-slide="prev">
+ <!-- <a class="carousel-control-prev" href="#wstPortraitSlider" role="button" data-slide="prev">
 	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 	<span class="sr-only">Previous</span>
  </a>
  <a class="carousel-control-next" href="#wstPortraitSlider" role="button" data-slide="next">
 	<span class="carousel-control-next-icon" aria-hidden="true"></span>
 	<span class="sr-only">Next</span>
- </a>
+ </a> -->
 </div>
