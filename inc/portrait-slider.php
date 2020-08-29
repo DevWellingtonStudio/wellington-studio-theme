@@ -38,7 +38,8 @@
 			</div>
 			<div class="col-md-6 card-body-wrapper">
 			 <div class="card-body">
-				<h1 class="card-title">Section Title</h1>
+			   <?php $p_slider_title2 = get_theme_mod('p-slider-title2'); ?>
+				<h1 class="card-title"><?php if($p_slider_title2 !== ''){echo $p_slider_title2;} ?></h1>
 				<p class="card-text">This area will have more style added. Font size will be updated, options to change background color. The image to the right should always be an image that can be rendered in portrait orientation for best results. Consider when viewing this section on a mobile device, the text "could" render over the image. Contast can be optimized via a filter on the image when viewed on devices smaller than a tablet.</p>
 				<button type="button" class="btn btn-dark"><h5>This Button Links To Content</h5></button>
 			 </div>
