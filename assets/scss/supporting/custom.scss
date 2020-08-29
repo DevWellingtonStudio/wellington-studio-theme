@@ -64,6 +64,16 @@
 /** Hero Section
 ================================ */
 
+.zindex-btn {
+  z-index: 9999;
+  position: relative;
+}
+
+.card-text a {
+  z-index: 9999;
+  position: relative;
+}
+
 /* For full-width customizer setting */
 .wrap.container-fluid {
 

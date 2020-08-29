@@ -10859,6 +10859,16 @@ body.search .entry {
 ================================ */
 /** Hero Section
 ================================ */
+.zindex-btn {
+  z-index: 9999;
+  position: relative;
+}
+
+.card-text a {
+  z-index: 9999;
+  position: relative;
+}
+
 /* For full-width customizer setting */
 .wrap.container-fluid, .wrap.container-sm, .wrap.container-md, .wrap.container-lg, .wrap.container-xl {
   overflow: hidden;
