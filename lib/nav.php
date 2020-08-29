@@ -187,7 +187,7 @@ if($menu_locations && $menu_locations['subnav'] !=0) :
 		 'container'         => 'div',
 		 'container_class'   => 'collapse navbar-collapse justify-content-center',
 		 'container_id'      => 'bs-example-navbar-collapse-1',
-		 'menu_class'        => 'nav navbar-nav',
+		 'menu_class'        => 'nav navbar-nav subnav',
 		 'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 		 'walker'            => new WP_Bootstrap_Navwalker(),
 	 ) );
