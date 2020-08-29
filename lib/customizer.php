@@ -14,7 +14,7 @@
 add_action( 'customize_register', function( $wp_customize ) {
 
  include 'customizer-sections/portrait-slider-options.php';
- include 'customizer-sections/sub-nav.php';
+ include 'customizer-sections/sub-nav-options.php';
 
  // Add Default Settings
  $wp_customize->add_setting( 'bootstrap-for-genesis', array(

@@ -12,7 +12,7 @@ $wp_customize->add_setting ( 'subnav_fcolor', array(
 	'sanitize_callback'	=> 'sanitize_hex_color',
 
 ));
-// Sub-Nav Background Font Picker
+// Sub-Nav Font Color
 $wp_customize -> add_control (
 	new WP_Customize_Color_Control (
 		$wp_customize,

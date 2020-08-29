@@ -3,9 +3,28 @@
 // Add Front Page Section
 $wp_customize->add_section( 'portrait-slider', array(
 	'title' => __( 'Portrait Slider', 'bootstrap-for-genesis' ),
-	'priority' => 10,
-	//'panel' => 'wellington-studio-theme',
+	'priority' => 10
 ));
+
+// Portrait Slider #1 Background Color
+$wp_customize->add_setting ( 'slider1_bg', array(
+	'default'						=> '#000',
+	'type'								=> 'theme_mod',
+	'sanitize_callback'	=> 'sanitize_hex_color',
+
+));
+// Portrait Slider #1 Background Color
+$wp_customize -> add_control (
+	new WP_Customize_Color_Control (
+		$wp_customize,
+		'slider1_bg', array(
+			'label'			=> __('Slider #1 Background Color', 'bootstrap-for-genesis' ),
+			'priority'		=>  10,
+			'section'		=> 'portrait-slider',
+			'settings'	=> 'slider1_bg'
+		)
+	)
+);
 // Portrait Slider #1 Title
 $wp_customize->add_setting( 'p-slider-title1', array(
 	'default'	=>	'',
@@ -62,7 +81,6 @@ $wp_customize -> add_control (
 		)
 	)
 );
-
 // Portrait Slider #2 Title
 $wp_customize->add_setting( 'p-slider-title2', array(
 	'default'	=>	'',

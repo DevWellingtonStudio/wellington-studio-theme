@@ -10,7 +10,7 @@
 	 <li data-target="#wstPortraitSlider" data-slide-to="2"></li>
 	</ol>
 	<div class="carousel-inner">
-	 <div class="carousel-item active">
+	 <div id="portrait-item-one" class="carousel-item active">
 		<div id="portrait-hero" class="card">
 		 <div class="row no-gutters">
 			<div class="col-md-6 card-body-wrapper">
@@ -30,7 +30,7 @@
 		 </div>
 		</div>
 	 </div>
-	 <div class="carousel-item">
+	 <div id="portrait-item-two" class="carousel-item">
 		<div id="portrait-hero" class="card">
 		 <div class="row no-gutters">
 			<div class="col-md-6 portrait-image">
@@ -50,7 +50,7 @@
 		 </div>
 		</div>
 	 </div>
-	 <div class="carousel-item">
+	 <div id="portrait-item-three" class="carousel-item">
 		<div id="portrait-hero" class="card">
 		 <div class="row no-gutters">
 			<div class="col-md-6 card-body-wrapper">
