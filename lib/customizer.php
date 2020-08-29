@@ -14,6 +14,7 @@
 add_action( 'customize_register', function( $wp_customize ) {
 
  include 'customizer-sections/portrait-slider-options.php';
+ include 'customizer-sections/sub-nav.php';
 
  // Add Default Settings
  $wp_customize->add_setting( 'bootstrap-for-genesis', array(
@@ -211,34 +212,10 @@ add_action( 'customize_register', function( $wp_customize ) {
  ));
 
  /// ====== End Slider ====== ///
-
-
-
-
-
- // Sub-Nav Background Color Picker
- $wp_customize->add_setting ( 'subnav_bgcolor', array(
-	 'default'						=> '#ccc',
-	 'type'								=> 'theme_mod',
-	 'sanitize_callback'	=> 'sanitize_hex_color',
-
- ));
-
- // Sub-Nav Background Color Picker
- $wp_customize -> add_control (
-	 new WP_Customize_Color_Control (
-		 $wp_customize,
-		 'subnav_bgcolor', array(
-			 'label'			=> __('Sub-Nav Background Color', 'bootstrap-for-genesis' ),
-			 'priority'		=>  10,
-			 'section'		=> 'frontpage'
-		 )
-	 )
- );
-
+ 
  // Add Navigation Section
  $wp_customize->add_section( 'navigation', array(
-	 'title' => __( 'Navigation Settings', 'bootstrap-for-genesis' ),
+	 'title' => __( 'Top Navigation Settings', 'bootstrap-for-genesis' ),
 	 'priority' => 10,
 	 'panel' => 'wellington-studio-theme'
  ) );
@@ -251,7 +228,7 @@ add_action( 'customize_register', function( $wp_customize ) {
  $wp_customize->add_control( 'navposition', array(
 	 'type' => 'select',
 	 'priority' => 10,
-	 'label' => __( 'Navigation Position', 'bootstrap-for-genesis' ),
+	 'label' => __( 'Top Navigation Position', 'bootstrap-for-genesis' ),
 	 'section' => 'navigation',
 	 'choices' => array(
 		 '' => __( 'Default', 'bootstrap-for-genesis' ),
@@ -269,7 +246,7 @@ add_action( 'customize_register', function( $wp_customize ) {
  $wp_customize->add_control( 'navcontainer', array(
 	 'type' => 'select',
 	 'priority' => 20,
-	 'label' => __( 'Navigation Container', 'bootstrap-for-genesis' ),
+	 'label' => __( 'Top Navigation Container', 'bootstrap-for-genesis' ),
 	 'section' => 'navigation',
 	 'choices' => array(
 		 'sm' => __( 'Small', 'bootstrap-for-genesis' ),
@@ -287,7 +264,7 @@ add_action( 'customize_register', function( $wp_customize ) {
  $wp_customize->add_control( 'navcolor', array(
 	 'type' => 'select',
 	 'priority' => 30,
-	 'label' => __( 'Navigation Background', 'bootstrap-for-genesis' ),
+	 'label' => __( 'Top Navigation Background', 'bootstrap-for-genesis' ),
 	 'section' => 'navigation',
 	 'choices' => array(
 		 'light' => __( 'Light', 'bootstrap-for-genesis' ),
