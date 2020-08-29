@@ -1,0 +1,121 @@
+/* Custom SCSS
+
+	- Front Page Widgets
+	- Front Page One
+	- Genesis Front Page Loop
+	- Hero Section
+	- Nav
+----------------------------------------------------------------------------- */
+
+.mt.row {
+  margin-top: $marginTopx1 !important;
+}
+
+.mb {
+  margin-bottom: $marginBottomx1;
+}
+
+.mt_med {
+  margin-top: $marginTopx2;
+}
+
+.mb_med {
+  margin-bottom: $marginBottomx2;
+}
+
+#sub-nav-fp {
+  background-color: $gray;
+}
+
+/** Front Page Widgets
+================================ */
+
+.frontpage-one,
+.frontpage-two,
+.frontpage-three,
+.frontpage-four {
+  width: $fullwidth;
+  margin: $marginTopx1 0 $marginBottomx1 0;
+  padding: $paddingx1;
+}
+
+/** Front Page One
+================================ */
+.frontpage-one .container,
+.frontpage-two .container {
+  display: flex;
+  align-items: center;
+  margin: 2.618rem auto;
+
+  section {
+	margin: auto 2.618em;
+  }
+}
+.frontpage-three {
+  background-color: #F8BD26;
+}
+
+/** Genesis Front Page Loop
+================================ */
+
+
+
+
+/** Hero Section
+================================ */
+
+/* For full-width customizer setting */
+.wrap.container-fluid {
+
+  overflow: hidden;
+
+  #hero-section {
+	width: $fullwidth-plus;
+	margin-left: -7.5%;
+  }
+
+}
+#portrait-hero.card {
+  border-radius: 0;
+  border: none;
+}
+#portrait-hero {
+  .portrait-image {
+	img {
+	  object-fit: cover;
+	  max-height: 900px;
+	}
+	.card-img {
+	  border-radius: 0;
+	}
+  }
+  .card-body {
+	padding: 2.618em;
+	max-height: 900px;
+  }
+  .card-body-wrapper {
+	display: flex;
+  }
+  .card-body-wrapper .card-body {
+	margin: auto;
+  }
+  button h5 {
+	margin: .5em auto;
+  }
+}
+
+/** Nav
+=============================== */
+.logged-in.admin-bar {
+  .site-container {
+	header nav {
+	  margin-top: 32px;
+	}
+  }
+}
+
+#sub-nav-fp {
+  width: $fullwidth-plus;
+  margin-left: -7.5%;
+  margin-top: -1px;
+}
