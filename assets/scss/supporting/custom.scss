@@ -64,39 +64,49 @@
 /** Hero Section
 ================================ */
 #portrait-section {
-
   #wstPortraitSlider {
-
     .carousel-inner {
-
       #portrait-item-one {
-
         #portrait-hero {
-
           .row {
-
             .card-body-wrapper{
-
               .card-body {
-
                 h1 {
                   text-transform: uppercase;
                 }
-
               }
-
             }
-
           }
-
         }
-
       }
-
+      #portrait-item-two {
+        #portrait-hero {
+          .row {
+            .card-body-wrapper{
+              .card-body {
+                h1 {
+                  text-transform: uppercase;
+                }
+              }
+            }
+          }
+        }
+      }
+      #portrait-item-three {
+        #portrait-hero {
+          .row {
+            .card-body-wrapper{
+              .card-body {
+                h1 {
+                  text-transform: uppercase;
+                }
+              }
+            }
+          }
+        }
+      }
     }
-
   }
-
 }
 
 .zindex-btn {

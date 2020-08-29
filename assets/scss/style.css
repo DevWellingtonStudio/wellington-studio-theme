@@ -10894,6 +10894,12 @@ body.search .entry {
 #portrait-section #wstPortraitSlider .carousel-inner #portrait-item-one #portrait-hero .row .card-body-wrapper .card-body h1 {
   text-transform: uppercase;
 }
+#portrait-section #wstPortraitSlider .carousel-inner #portrait-item-two #portrait-hero .row .card-body-wrapper .card-body h1 {
+  text-transform: uppercase;
+}
+#portrait-section #wstPortraitSlider .carousel-inner #portrait-item-three #portrait-hero .row .card-body-wrapper .card-body h1 {
+  text-transform: uppercase;
+}
 
 .zindex-btn {
   z-index: 9999;

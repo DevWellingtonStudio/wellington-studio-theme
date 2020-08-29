@@ -14,7 +14,9 @@
 add_action( 'customize_register', function( $wp_customize ) {
 
  include 'customizer-sections/portrait-slider-options.php';
+ include 'customizer-sections/fp-hero-slider-options.php';
  include 'customizer-sections/sub-nav-options.php';
+ 
 
  // Add Default Settings
  $wp_customize->add_setting( 'bootstrap-for-genesis', array(
@@ -77,141 +79,6 @@ add_action( 'customize_register', function( $wp_customize ) {
  ));
 
  /// ====== End Video ====== ///
-
- /// ====== Slider ====== ///
-
- // Hero Slider Image #1
- $wp_customize -> add_setting ( 'wst_slider1', array(
-	 'default'           => '',
-	 'type'              => 'theme_mod',
-	 'transport'         => 'postMessage'
- ));
- $wp_customize -> add_control (
-	 new WP_Customize_Image_Control (
-		 $wp_customize,
-		 'wst_slider1',
-		 array (
-			 'label'             => __('Slider Image, One'),
-			 'section'           => 'frontpage',
-			 'settings'          => 'wst_slider1',
-			 //'priority'          => 10,
-			 'sanitize_callback' => 'esc_url_raw',
-		 )
-	 )
- );
- // Slider #1 Title
- $wp_customize->add_setting( 'slider1title', array(
-	 'default'	=>	'',
-	 'type'	=> 'theme_mod',
-	 'sanitize_callback'	=>	'sanitize_text_field'
- ));
- $wp_customize->add_control( 'slider1title', array(
-	 'label'	=>	__('Slider 1 Title', 'bootstrap-for-genesis' ),
-	 'section'	=>	'frontpage',
-	 'settings'	=>	'slider1title',
-	 'type'	=> 'text'
- ));
- // Slider #1 Text Area
- $wp_customize->add_setting( 'sldr1text', array(
-	 'default'	=>	'',
-	 'type'	=> 'theme_mod',
-	 'sanitize_callback'	=>	'sanitize_text_field'
- ));
- $wp_customize->add_control( 'sldr1text', array(
-	 'label'	=>	__('Slider 1 Text Area', 'bootstrap-for-genesis' ),
-	 'section'	=>	'frontpage',
-	 'settings'	=>	'sldr1text',
-	 'type'	=> 'textarea'
- ));
-
- // Hero Slider Image #2
- $wp_customize -> add_setting ( 'wst_slider2', array(
-	 'default'           => '',
-	 'type'              => 'theme_mod',
-	 'transport'         => 'postMessage'
- ));
- $wp_customize -> add_control (
-	 new WP_Customize_Image_Control (
-		 $wp_customize,
-		 'wst_slider2',
-		 array (
-			 'label'             => __('Slider Image, Two'),
-			 'section'           => 'frontpage',
-			 'settings'          => 'wst_slider2',
-			//'priority'          => 10,
-			 'sanitize_callback' => 'esc_url_raw',
-		 )
-	 )
- );
- // Slider #2 Title
- $wp_customize->add_setting( 'slider2title', array(
-	 'default'	=>	'',
-	 'type'	=> 'theme_mod',
-	 'sanitize_callback'	=>	'sanitize_text_field'
- ));
- $wp_customize->add_control( 'slider2title', array(
-	 'label'	=>	__('Slider 2 Title', 'bootstrap-for-genesis' ),
-	 'section'	=>	'frontpage',
-	 'settings'	=>	'slider2title',
-	 'type'	=> 'text'
- ));
- // Slider #1 Text Area
- $wp_customize->add_setting( 'sldr2text', array(
-	 'default'	=>	'',
-	 'type'	=> 'theme_mod',
-	 'sanitize_callback'	=>	'sanitize_text_field'
- ));
- $wp_customize->add_control( 'sldr2text', array(
-	 'label'	=>	__('Slider 2 Text Area', 'bootstrap-for-genesis' ),
-	 'section'	=>	'frontpage',
-	 'settings'	=>	'sldr2text',
-	 'type'	=> 'textarea'
- ));
-// Hero Slider Image #3
- $wp_customize -> add_setting ( 'wst_slider3', array(
-	 'default'           => '',
-	 'type'              => 'theme_mod',
-	 'transport'         => 'postMessage'
- ));
- $wp_customize -> add_control (
-	 new WP_Customize_Image_Control (
-		 $wp_customize,
-		 'wst_slider3',
-		 array (
-			 'label'             => __('Slider Image, Three'),
-			 'section'           => 'frontpage',
-			 'settings'          => 'wst_slider3',
-			//'priority'          => 10,
-			 'sanitize_callback' => 'esc_url_raw',
-		 )
-	 )
- );
- // Slider #3 Title
- $wp_customize->add_setting( 'slider3title', array(
-	 'default'	=>	'',
-	 'type'	=> 'theme_mod',
-	 'sanitize_callback'	=>	'sanitize_text_field'
- ));
- $wp_customize->add_control( 'slider3title', array(
-	 'label'	=>	__('Slider 3 Title', 'bootstrap-for-genesis' ),
-	 'section'	=>	'frontpage',
-	 'settings'	=>	'slider3title',
-	 'type'	=> 'text'
- ));
- // Slider #3 Text Area
- $wp_customize->add_setting( 'sldr3text', array(
-	 'default'	=>	'',
-	 'type'	=> 'theme_mod',
-	 'sanitize_callback'	=>	'sanitize_text_field'
- ));
- $wp_customize->add_control( 'sldr3text', array(
-	 'label'	=>	__('Slider 3 Text Area', 'bootstrap-for-genesis' ),
-	 'section'	=>	'frontpage',
-	 'settings'	=>	'sldr3text',
-	 'type'	=> 'textarea'
- ));
-
- /// ====== End Slider ====== ///
  
  // Add Navigation Section
  $wp_customize->add_section( 'navigation', array(
