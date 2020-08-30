@@ -5,6 +5,7 @@
 	- Front Page One
 	- Genesis Front Page Loop
 	- Hero Section
+	- Images
 	- Mid Front Page Slider
 	- Nav
 ----------------------------------------------------------------------------- */
@@ -170,6 +171,17 @@
 	margin: .5em auto;
   }
 }
+
+/** Images
+=============================== */
+.img-responsive {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
 
 /** Mid Front Page Slider
 =============================== */

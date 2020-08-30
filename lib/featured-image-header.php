@@ -15,7 +15,7 @@ function add_featured_image() {
 	echo '
 			 <div id="featured-image-header">
 			 	<div class="container-fluid p-0">
-			 		<img class="img-fluid" src="'. $featured_img_url .'" alt="'. $alt .'">
+			 		<img class="img-responsive" src="'. $featured_img_url .'" alt="'. $alt .'">
 				</div>
 			 </div>
  			';
