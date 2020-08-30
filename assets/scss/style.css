@@ -10834,9 +10834,11 @@ body.search .entry {
 /* Custom SCSS
 
 	- Front Page Widgets
+	- Front Page News
 	- Front Page One
 	- Genesis Front Page Loop
 	- Hero Section
+	- Mid Front Page Slider
 	- Nav
 ----------------------------------------------------------------------------- */
 .mt.row {
@@ -10868,6 +10870,13 @@ body.search .entry {
   width: 100%;
   margin: 1.618rem 0 1.618rem 0;
   padding: 1.618em;
+}
+
+/** Front Page News
+================================ */
+#fp-news .news-excerpt h3 a {
+  color: #000;
+  text-decoration: none;
 }
 
 /** Front Page One
@@ -10944,6 +10953,33 @@ body.search .entry {
 }
 #portrait-hero button h5 {
   margin: 0.5em auto;
+}
+
+/** Mid Front Page Slider
+=============================== */
+#mid-slider-fp-1,
+#mid-slider-fp-2,
+#mid-slider-fp-3 {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+#mid-slider-fp-1 .carousel-caption,
+#mid-slider-fp-2 .carousel-caption,
+#mid-slider-fp-3 .carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+#mid-slider-fp-1 .carousel-caption h3,
+#mid-slider-fp-2 .carousel-caption h3,
+#mid-slider-fp-3 .carousel-caption h3 {
+  font-size: 4rem;
+}
+#mid-slider-fp-1 .carousel-caption p,
+#mid-slider-fp-2 .carousel-caption p,
+#mid-slider-fp-3 .carousel-caption p {
+  font-size: 1.5rem;
 }
 
 /** Nav

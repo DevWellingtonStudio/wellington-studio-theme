@@ -76,13 +76,13 @@ function io_front_page_latest_posts() {
 
   // The Loop
   if ( $the_query->have_posts() ) {
-	echo '<div class="mt_med text-center"><h2>News</h2></div>';
-	echo '<div class="mt row">';
+	echo '<div class="h1 mt_med text-center"><h2 class="h1">News</h2></div>';
+	echo '<div id="fp-news" class="news-fp mt row">';
 
 	while ( $the_query->have_posts() ) {
 	  $the_query->the_post();
 
-	  echo '<div class="col-md-4">';
+	  echo '<div class="news-excerpt col-md-4">';
 
 	  if ( $image = genesis_get_image( 'format=url&size=featured-image' ) ) {
 		printf( '<div class="featured-image"><a href="%s" rel="bookmark"><img src="%s" alt="%s" /></a></div>', get_permalink(), $image, the_title_attribute( 'echo=0' ) );
