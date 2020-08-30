@@ -1,4 +1,5 @@
 <?php
+$wst_slider1	= get_theme_mod('wst_slider1', $default );
 $slider1title	= get_theme_mod('slider1title', $default );
 $sldr1text		= get_theme_mod('sldr1text', $default );
 $wst_slider2	= get_theme_mod('wst_slider2', $default );
