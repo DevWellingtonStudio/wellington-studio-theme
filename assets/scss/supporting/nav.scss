@@ -44,6 +44,12 @@
 
 }
 
+/* Footer Nav */
+.site-footer .wrap {
+    display: flex;
+    align-items: baseline;
+}
+
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
 
