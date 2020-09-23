@@ -1,0 +1,26 @@
+/** SCSS Default Template
+---------------------------------------- */
+.page-template-default {
+  .site-inner {
+    .wrap {
+      .content-sidebar-wrap.row {
+        #genesis-content {
+          .page {
+            h2,
+            h3 {
+              width: 70%;
+              margin: 0 auto;
+            }
+            .wp-block-columns,
+            .wp-block-image,
+            p,
+            ul {
+              width: 70%;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
