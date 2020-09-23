@@ -125,7 +125,7 @@ function wst_do_frontpage_three() {
 	genesis_structural_wrap( 'frontpage-three' );
 
 	genesis_widget_area( 'frontpage-three', array(
-		'before' => '<div class="container-fluid">',
+		'before' => '<div class="container-2">',
 		'after' => '</div>'
 	) );
 
