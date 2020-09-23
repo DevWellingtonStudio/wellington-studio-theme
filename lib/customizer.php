@@ -261,7 +261,9 @@ $wp_customize -> add_control (
 	 'choices' => array(
 		 'light' => __( 'Light', 'bootstrap-for-genesis' ),
 		 'dark' => __( 'Dark', 'bootstrap-for-genesis' ),
-		 'primary' => __( 'Primary', 'bootstrap-for-genesis' )
+		 'primary' => __( 'Primary', 'bootstrap-for-genesis' ),
+		 'red' => __( 'Red', 'bootstrap-for-genesis' ),
+		 'purple' => __( 'Purple', 'bootstrap-for-genesis' )
 	 )
  ) );
 });
