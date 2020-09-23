@@ -1,5 +1,15 @@
 /* Navbar
 ----------------------------------------------------------------------------- */
+
+/* Red Nav Color */
+.navbar-red {
+background-color: $navred
+}
+.bg-red {
+background-color: $navred;
+}
+
+
 .no-js .menu-item-has-children:hover .dropdown-menu,
 .no-js .menu-item-has-children:focus .dropdown-menu {
     display: block;

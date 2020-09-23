@@ -45,7 +45,7 @@ var paths = {
         dest: 'languages/bootstrap-for-genesis.pot'
     },
     site: {
-        url: 'https://100.local'
+        url: 'https://blackculture.local'
     }
 }
 

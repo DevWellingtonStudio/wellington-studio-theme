@@ -36,7 +36,7 @@ add_filter( 'wp_nav_menu_args', function( $args ) {
 	$args['container'] = 'div';
 	$args['container_class'] = 'collapse navbar-collapse';
 	$args['container_id'] = $data_target;
-	$args['depth'] = 0;
+	$args['depth'] = 3;
 	$args['menu_class'] = esc_attr( implode( ' ', $menu_classes ) );
 	$args['fallback_cb'] = 'WP_Bootstrap_Navwalker::fallback';
 	$args['walker'] = new WP_Bootstrap_Navwalker();

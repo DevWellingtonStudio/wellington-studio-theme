@@ -135,8 +135,6 @@
 /* For full-width customizer setting */
 .wrap.container-fluid {
 
-  overflow: hidden;
-
   #hero-section {
 	width: $fullwidth-plus;
 	margin-left: -7.5%;
@@ -208,13 +206,6 @@
 
 /** Nav
 =============================== */
-.logged-in.admin-bar {
-  .site-container {
-	header nav {
-	  margin-top: 32px;
-	}
-  }
-}
 
 #sub-nav-fp {
   width: $fullwidth-plus;

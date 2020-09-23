@@ -25,6 +25,7 @@ function add_slider_front_page() {
   $hero_h1 			= get_theme_mod('hero_h1', $default );
   $hero_desc		= get_theme_mod('hero_desc', $default );
   $wst_slider1		= get_theme_mod('wst_slider1', $default );
+  $port_slider1     = get_theme_mod('port_slider1');
   ?>
 
 	<?php if($videoUrl !== $default ) : ?>
@@ -46,8 +47,9 @@ function add_slider_front_page() {
 	</div>
 	<?php elseif($wst_slider1 !== $default) :
 	    include (get_stylesheet_directory() . '/inc/fp-hero-slider.php');
-	elseif($videoUrl == $default && $wst_slider1 == $default ) :
-		include (get_stylesheet_directory() . '/inc/portrait-slider.php');
+	elseif($videoUrl == $default && $wst_slider1 == $default && $port_slider1 !== $default ) :
+          include( get_stylesheet_directory() . '/inc/portrait-slider.php' );
+	
    	endif;
  }
 
