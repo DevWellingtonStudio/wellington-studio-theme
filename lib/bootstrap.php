@@ -128,6 +128,9 @@ function bfg_merge_genesis_attr_classes() {
 	    	$navclasses[] = 'navbar-red';
 	    	$navclasses[] = 'bg-red';
 	    	break;
+	    case 'purple':
+	    	$navclasses[] = 'navbar-purple';
+	    	$navclasses[] = 'bg-purple';
     }
 
     $classes['nav-primary'] = esc_attr( implode( ' ', $navclasses ) );
