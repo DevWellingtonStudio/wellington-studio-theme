@@ -1,6 +1,22 @@
 /* Widget Styling
 ------------------------------------------------------------ */
 
+/* Front Page #1 */
+.frontpage-one {
+	.container {
+		max-width: 1274px;
+		.widget_custom_html {
+			.custom-html-widget {
+				p {
+					font-size: 1.8rem;
+					text-align: center;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+}
+
 // default widget styles
 .widget {
     table {
