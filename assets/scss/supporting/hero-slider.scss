@@ -1,0 +1,14 @@
+/** SCSS Hero Slider
+-------------------------- */
+#wstTopSlider {
+  .carousel-inner {
+    .carousel-item {
+      .carousel-caption {
+        bottom: 50%;
+        h5 {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}

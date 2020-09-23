@@ -42,7 +42,7 @@ $wp_customize->add_control( 'slider1title', array(
 $wp_customize->add_setting( 'sldr1text', array(
 	'default'	=>	'',
 	'type'	=> 'theme_mod',
-	'sanitize_callback'	=>	'sanitize_text_field'
+	'sanitize_callback'	=>	'wp_kses_post'
 ));
 $wp_customize->add_control( 'sldr1text', array(
 	'label'	=>	__('Slider 1 Text Area', 'bootstrap-for-genesis' ),
@@ -65,7 +65,6 @@ $wp_customize -> add_control (
 			'label'             => __('Slider Image, Two'),
 			'section'           => 'hero-slider',
 			'settings'          => 'wst_slider2',
-//'priority'          => 10,
 			'sanitize_callback' => 'esc_url_raw',
 		)
 	)
@@ -86,7 +85,7 @@ $wp_customize->add_control( 'slider2title', array(
 $wp_customize->add_setting( 'sldr2text', array(
 	'default'	=>	'',
 	'type'	=> 'theme_mod',
-	'sanitize_callback'	=>	'sanitize_text_field'
+	'sanitize_callback'	=>	'wp_kses_post'
 ));
 $wp_customize->add_control( 'sldr2text', array(
 	'label'	=>	__('Slider 2 Text Area', 'bootstrap-for-genesis' ),
@@ -108,7 +107,6 @@ $wp_customize -> add_control (
 			'label'             => __('Slider Image, Three'),
 			'section'           => 'hero-slider',
 			'settings'          => 'wst_slider3',
-//'priority'          => 10,
 			'sanitize_callback' => 'esc_url_raw',
 		)
 	)
@@ -129,7 +127,7 @@ $wp_customize->add_control( 'slider3title', array(
 $wp_customize->add_setting( 'sldr3text', array(
 	'default'	=>	'',
 	'type'	=> 'theme_mod',
-	'sanitize_callback'	=>	'sanitize_text_field'
+	'sanitize_callback'	=>	'wp_kses_post'
 ));
 $wp_customize->add_control( 'sldr3text', array(
 	'label'	=>	__('Slider 3 Text Area', 'bootstrap-for-genesis' ),
