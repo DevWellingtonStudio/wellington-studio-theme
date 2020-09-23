@@ -2,29 +2,39 @@
 
 function load_wst_customizer_css() {
 	$css_wst = '';
-	$subnav_bgcolor 				= get_theme_mod( 'subnav_bgcolor');
-	$subnav_fcolor					= get_theme_mod('subnav_fcolor');
-	$subnav_hover						= get_theme_mod('subnav_hover');
 	
-	$slider1_bg							=	get_theme_mod('slider1_bg');
+	$nav_link_color             = get_theme_mod('nav_link_color');
+	$nav_link_hover_color       = get_theme_mod('nav_link_hover_color');
+	
+	$subnav_bgcolor 			= get_theme_mod( 'subnav_bgcolor');
+	$subnav_fcolor				= get_theme_mod('subnav_fcolor');
+	$subnav_hover				= get_theme_mod('subnav_hover');
+	
+	$slider1_bg					= get_theme_mod('slider1_bg');
 	$slider1_title_color		= get_theme_mod('slider1_title_color');
 	$slider1_text_color			= get_theme_mod('slider1_text_color');
-	$slider1_btn_text_color	= get_theme_mod('slider1_btn_text_color');
+	$slider1_btn_text_color	    = get_theme_mod('slider1_btn_text_color');
 	$slider1_btn_color			= get_theme_mod('slider1_btn_color');
- 
- 	$slider2_bg							=	get_theme_mod('slider2_bg');
+	
+	$slider2_bg					= get_theme_mod('slider2_bg');
 	$slider2_title_color		= get_theme_mod('slider2_title_color');
 	$slider2_text_color			= get_theme_mod('slider2_text_color');
-	$slider2_btn_text_color	= get_theme_mod('slider2_btn_text_color');
+	$slider2_btn_text_color	    = get_theme_mod('slider2_btn_text_color');
 	$slider2_btn_color			= get_theme_mod('slider2_btn_color');
- 
- 	$slider3_bg							=	get_theme_mod('slider3_bg');
+	
+	$slider3_bg					= get_theme_mod('slider3_bg');
 	$slider3_title_color		= get_theme_mod('slider3_title_color');
 	$slider3_text_color			= get_theme_mod('slider3_text_color');
-	$slider3_btn_text_color	= get_theme_mod('slider3_btn_text_color');
+	$slider3_btn_text_color	    = get_theme_mod('slider3_btn_text_color');
 	$slider3_btn_color			= get_theme_mod('slider3_btn_color');
 	
 	$css_wst .= '
+		.menu-item a {
+			color: '. $nav_link_color .';
+		}
+		.menu-item a:hover {
+			color: '. $nav_link_hover_color .';
+		}
 		.btn-1 h5 {
 			color: '. $slider1_btn_text_color .';
 		}

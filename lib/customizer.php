@@ -87,8 +87,63 @@ add_action( 'customize_register', function( $wp_customize ) {
 	 'priority' => 10,
 	 'panel' => 'wellington-studio-theme'
  ) );
+	
+	
+// Navigation Link Color
+$wp_customize->add_setting ( 'nav_link_color', array(
+	'default'	=> '#000',
+	'type'		=> 'theme_mod',
+	'sanitize_callback'	=> 'sanitize_hex_color',
+	
+	));
+// Portrait Slider #1 Background Color
+$wp_customize -> add_control (
+	new WP_Customize_Color_Control (
+		$wp_customize,
+		'nav_link_color', array(
+			'label'			=> __('Navigation Link Color', 'bootstrap-for-genesis' ),
+			'priority'		=>  10,
+			'section'		=> 'navigation',
+			'settings'	    => 'nav_link_color'
+		)
+	)
+);
 
- //* Add Navigation Controls
+// Navigation Link:hover Color
+	$wp_customize->add_setting ( 'nav_link_hover_color', array(
+		'default'	=> '#ccc',
+		'type'		=> 'theme_mod',
+		'sanitize_callback'	=> 'sanitize_hex_color',
+	
+	));
+// Portrait Slider #1 Background Color
+	$wp_customize -> add_control (
+		new WP_Customize_Color_Control (
+			$wp_customize,
+			'nav_link_hover_color', array(
+				'label'			=> __('Navigation Link Hover Color', 'bootstrap-for-genesis' ),
+				'priority'		=>  10,
+				'section'		=> 'navigation',
+				'settings'	    => 'nav_link_hover_color'
+			)
+		)
+	);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//* Add Navigation Controls
  $wp_customize->add_setting( 'navposition', array(
 	 'default' => ''
  ) );
