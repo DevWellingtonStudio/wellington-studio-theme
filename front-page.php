@@ -78,7 +78,8 @@ function io_front_page_latest_posts() {
 
   // The Loop
   if ( $the_query->have_posts() ) {
-	echo '<div class="h1 mt_med text-center"><h2 class="display-2">NEWS</h2></div>';
+	echo '<div class="news-feed-title mt_med text-center"><h2 class="news-feed">FEATURED EVENTS</h2></div>';
+	echo '<div class="container-2">';
 	echo '<div id="fp-news" class="news-fp mt row">';
 
 	while ( $the_query->have_posts() ) {
@@ -90,16 +91,19 @@ function io_front_page_latest_posts() {
 		printf( '<div class="featured-image"><a href="%s" rel="bookmark"><img src="%s" alt="%s" /></a></div>', get_permalink(), $image, the_title_attribute( 'echo=0' ) );
 	  }
 
-	  echo '<h3><a href="';
+	  /*echo '<h3><a href="';
 	  echo esc_url( the_permalink() );
 	  echo '">';
 	  echo get_the_title();
-	  echo '</a></h3>';
+	  echo '</a></h3>';*/
+        
+        echo '<a href="#"><button class="btn-square btn-red news-readmore">Read More</button></a>';
 
 	  echo '</div>';
 	}
 
-	echo '</div>';
+	echo '</div>
+        </div>';
 
 	/* Restore original Post Data */
 	wp_reset_postdata();

@@ -55,7 +55,7 @@
 /** Front Page One
 ================================ */
 .frontpage-one .container,
-.frontpage-two .container {
+.frontpage-two .container-2 {
   display: flex;
   align-items: center;
   margin: 2.618rem auto;
@@ -63,9 +63,6 @@
   section {
 	margin: auto 2.618em;
   }
-}
-.frontpage-three {
-  background-color: #F8BD26;
 }
 
 /** Genesis Front Page Loop

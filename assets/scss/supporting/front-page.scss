@@ -1,0 +1,48 @@
+/** SCSS Front Page
+------------------------------ */
+.news-feed-title {
+  h2.news-feed {
+    color: $navred;
+    font-size: 4rem;
+  }
+}
+
+#fp-news {
+
+  .news-readmore {
+    margin: 1.618em auto 0 auto;
+    display: block;
+  }
+
+  .news-excerpt {
+
+    .featured-image a img {
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+
+  }
+
+}
+
+.frontpage-two {
+  .container-2 {
+    section {
+      flex-basis: 100%;
+      h4 {
+        font-size: 3rem;
+        color: $navred;
+      }
+    }
+  }
+}
+.frontpage-three {
+  .container-2 {
+    display: flex;
+    align-items: center;
+    section {
+      flex-basis: 100%;
+    }
+  }
+}
