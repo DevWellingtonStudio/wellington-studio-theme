@@ -15,7 +15,6 @@ background-color: $navred;
     background-color: $purple;
 }
 
-
 .no-js .menu-item-has-children:hover .dropdown-menu,
 .no-js .menu-item-has-children:focus .dropdown-menu {
     display: block;
@@ -32,6 +31,12 @@ background-color: $navred;
     padding: {
         left: 0;
         right: 0;
+    }
+}
+
+.navbar-expand-md {
+    .wrap {
+        width: 90%;
     }
 }
 
