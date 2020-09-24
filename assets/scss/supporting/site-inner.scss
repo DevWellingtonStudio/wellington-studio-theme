@@ -11,5 +11,7 @@
 }
 
 .front-page .site-inner {
+    position: relative;
+    z-index: -1;
   padding: $spacer*0 0;
 }

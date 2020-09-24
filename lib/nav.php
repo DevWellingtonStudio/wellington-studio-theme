@@ -139,6 +139,58 @@ add_filter( 'nav_menu_link_attributes', function( $atts, $item, $args, $depth ) 
  return $atts;
 }, 10, 4 );
 
+
+
+
+
+
+
+add_action( 'genesis_header', 'add_header_sub_nav', 12 );
+function add_header_sub_nav() {
+	$menu_locations = get_nav_menu_locations();
+// Sub nav renders is assigned in Menu editor
+	if($menu_locations && $menu_locations['header-sub'] !=0) :
+		?>
+      <nav id="header-sub" class="navbar navbar-expand-md navbar-light" role="navigation">
+        <div class="sm-nav-container">
+			<?php
+			wp_nav_menu( array(
+				'theme_location'    => 'header-sub',
+				'depth'             => 2,
+				'container'         => 'div',
+				'container_class'   => 'container',
+				'container_id'      => 'header-sub-nav',
+				'menu_class'        => 'nav justify-content-end',
+				'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+				'walker'            => new WP_Bootstrap_Navwalker(),
+			) );
+			?>
+        </div>
+      </nav>
+	<?php endif; ?>
+
+<?php }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Adds Footer Navigation
 add_action( 'genesis_footer', 'add_footer_nav', 11 );
 function add_footer_nav() {
