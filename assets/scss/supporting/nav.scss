@@ -3,6 +3,10 @@
 
 /* Header Sub Nav */
 
+.support-link-padding {
+    background-color: $green !important;
+}
+
 header.site-header {
     position: relative;
     z-index: 1;
@@ -14,16 +18,25 @@ header.site-header {
 #header-sub {
     position: relative;
     z-index: 500;
-    right: 10%;
+    right: 5.5%;
     margin-top: -57px;
     .sm-nav-container {
         position: absolute;
         z-index: 501;
-        top: 140%;
+        top: 120%;
     }
 }
 
     #header-sub-nav {
+        li {
+            height: 40px;
+        }
+        li.support-link-padding {
+            height: 52px;
+            display: flex;
+            align-items: center;
+            margin-top: -7px;
+        }
         position: relative;
 
         #menu-sub-nav {
@@ -31,13 +44,7 @@ header.site-header {
             .nav-item {
                 background-color: $black;
             }
-
-            .nav-item:nth-child(n + 1) {
-                margin: 0 0 0 1em;
-            }
-
         }
-
     }
 
 
