@@ -1,6 +1,53 @@
 /* Navbar
 ----------------------------------------------------------------------------- */
 
+/* Header Sub Nav */
+
+.support-link-padding {
+    background-color: $green !important;
+}
+
+header.site-header {
+    position: relative;
+    z-index: 1;
+}
+
+#header-sub.navbar-expand-md {
+    justify-content: flex-end;
+}
+#header-sub {
+    position: relative;
+    z-index: 500;
+    right: 5.5%;
+    margin-top: -57px;
+    .sm-nav-container {
+        position: absolute;
+        z-index: 501;
+        top: 105%;
+    }
+}
+
+    #header-sub-nav {
+        li {
+            height: 40px;
+        }
+        li.support-link-padding {
+            height: 52px;
+            display: flex;
+            align-items: center;
+            margin-top: -6px;
+        }
+        position: relative;
+
+        #menu-sub-nav {
+
+            .nav-item {
+                background-color: $black;
+            }
+        }
+    }
+
+
 /* Red Nav Color */
 .navbar-red {
 background-color: $navred
