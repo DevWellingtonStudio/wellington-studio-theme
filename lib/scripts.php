@@ -14,6 +14,7 @@
 // Theme Scripts & Stylesheet
 add_action( 'wp_enqueue_scripts', 'bfg_theme_scripts' );
 function bfg_theme_scripts() {
+	wp_enqueue_style("custom-css", get_stylesheet_directory_uri() . '/assets/css/custom.css', array(), "", 'all');
 	wp_enqueue_style('custom-css', get_stylesheet_directory_uri() . '/assets/custom.css', array(), '1.0.0', 'all');
  if(function_exists('load_wst_customizer_css')) {
 	wp_add_inline_style('custom-css', load_wst_customizer_css());
