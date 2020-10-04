@@ -52,6 +52,7 @@
 }
 
 .frontpage-two {
+  background-color: $white;
   .container-2 {
     section {
       flex-basis: 100%;
@@ -63,6 +64,21 @@
   }
 }
 .frontpage-three {
+
+  .background-graphic {
+    background-image: url(images/svg/green_circle.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -717px;
+    margin-left: -98px;
+    height: 1000px;
+    width: 111%;
+    position: absolute;
+    z-index: -1;
+  }
+
+
   .container-2 {
     display: flex;
     align-items: center;

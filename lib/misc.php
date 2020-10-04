@@ -118,7 +118,7 @@ function wst_do_frontpage_two() {
 // Front Page Widget Three
 function wst_do_frontpage_three() {
 	genesis_markup( array(
-		'open' => '<div %s>',
+		'open' => '<div %s><div class="background-graphic"></div>',
 		'context' => 'frontpage-three'
 	) );
 

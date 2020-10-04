@@ -1,6 +1,7 @@
 /* Site Inner
 ----------------------------------------------------------------------------- */
 .site-inner {
+    overflow: hidden;
     padding: $spacer*0 0;
     .content {
         margin-bottom: $spacer;
@@ -11,6 +12,7 @@
 }
 
 .front-page .site-inner {
+    overflow: hidden;
     position: relative;
     z-index: -1;
   padding: $spacer*0 0;
