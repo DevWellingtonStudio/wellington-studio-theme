@@ -64,6 +64,13 @@ function mid_page_slider() {
 // Adds Sub Naviagtion Menu Function => /lib/nav.php
 add_action('genesis_before_content_sidebar_wrap', 'sub_nav_menu', 15 );
 
+add_action('genesis_before_content', 'add_background_one', 5);
+function add_background_one() {
+echo '<div id="background-one" class="container-fluid">' .
+     '<object data=""></object>' .
+     '</div>';
+}
+
 
 add_action( 'genesis_before_loop', 'io_front_page_latest_posts' );
 function io_front_page_latest_posts() {

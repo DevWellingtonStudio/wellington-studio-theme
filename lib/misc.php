@@ -118,7 +118,7 @@ function wst_do_frontpage_two() {
 // Front Page Widget Three
 function wst_do_frontpage_three() {
 	genesis_markup( array(
-		'open' => '<div %s>',
+		'open' => '<div %s><div class="background-graphic"></div>',
 		'context' => 'frontpage-three'
 	) );
 
@@ -147,8 +147,8 @@ function wst_do_frontpage_four() {
 	genesis_structural_wrap( 'frontpage-four' );
 
 	genesis_widget_area( 'frontpage-four', array(
-		'before' => '<div class="container-fluid">',
-		'after' => '</div>'
+		'before' => '<div class="container-fluid"><div class="row">',
+		'after' => '</div></div>'
 	) );
 
 	genesis_structural_wrap( 'frontpage-four', 'close' );

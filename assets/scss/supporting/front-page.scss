@@ -1,5 +1,30 @@
 /** SCSS Front Page
 ------------------------------ */
+.home {
+  .site-container {
+    .site-inner {
+      .content-sidebar-wrap.row {
+        background-image: url(images/svg/african_pattern-2.svg);
+        background-position: center;
+        background-repeat: repeat-y;
+      }
+    }
+  }
+}
+
+#background-one {
+  background-image: url(images/svg/yellow_circle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+  top: 106px;
+  width: 122%;
+  margin-left: -209px;
+}
+
+
 .news-feed-title {
   h2.news-feed {
     color: $navred;
@@ -27,6 +52,7 @@
 }
 
 .frontpage-two {
+  background-color: $white;
   .container-2 {
     section {
       flex-basis: 100%;
@@ -38,11 +64,44 @@
   }
 }
 .frontpage-three {
-  .container-2 {
+
+  .background-graphic {
+    background-image: url(images/svg/green_circle.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -717px;
+    margin-left: -98px;
+    height: 1000px;
+    width: 111%;
+    position: absolute;
+    z-index: -1;
+  }
+  section:nth-child(n + 3) {
+    float: left;
+    width: 30%;
+    .entry {
+      border: none;
+    }
+  }
+}
+
+.frontpage-four {
+  background-color: $orange;
+  margin: $marginTopx1 0 0 0 !important;
+  padding: 1.618em 1.618em 1.618em 1.618em;
+  .container-fluid .row {
     display: flex;
     align-items: center;
+    section.widget_text {
+      padding: 0 0 0 5.618em;
+    }
     section {
-      flex-basis: 100%;
+      flex-basis: 50%;
+      img {
+        margin: 0 auto;
+        display: block;
+      }
     }
   }
 }
