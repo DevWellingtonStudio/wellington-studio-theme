@@ -79,9 +79,29 @@
   }
   section:nth-child(n + 3) {
     float: left;
-    width: 30%;
+    width: 33.3%;
     .entry {
       border: none;
+    }
+    .more-link {
+      width: 35%;
+      margin: 1.618em auto 0 auto;
+      display: block;
+      text-align: center;
+      padding: 1em 1.5em;
+      background-color: $black;
+      color: $white;
+    }
+    article header {
+      text-align: center;
+      h4 a {
+        color: $black;
+      }
+    }
+    .entry-content {
+      p {
+        text-align: center;
+      }
     }
   }
 }
@@ -103,5 +123,13 @@
         display: block;
       }
     }
+  }
+}
+
+.frontpage-five {
+  background-color: $gray;
+  width: 100%;
+  section {
+    margin: 0 auto;
   }
 }
