@@ -44,6 +44,7 @@ function bfg_do_meta() {
 	if ( is_front_page() && is_active_sidebar( 'frontpage-two' ) ) add_action( 'genesis_after_content', 'wst_do_frontpage_two', 10 );
 	if ( is_front_page() && is_active_sidebar( 'frontpage-three' ) ) add_action( 'genesis_after_content', 'wst_do_frontpage_three', 15 );
 	if ( is_front_page() && is_active_sidebar( 'frontpage-four' ) ) add_action( 'genesis_after_content', 'wst_do_frontpage_four', 20 );
+	if ( is_front_Page() && is_active_sidebar( 'frontpage-five' ) ) add_action( 'genesis_after_content', 'wst_do_frontpage_five', 25 );
 
 	// Body Class
 	add_filter( 'body_class', 'bfg_body_class' );
@@ -156,6 +157,28 @@ function wst_do_frontpage_four() {
 	genesis_markup( array(
 		'close' => '</div>',
 		'context' => 'frontpage-four'
+	) );
+}
+
+// Front Page Widget Five
+function wst_do_frontpage_five() {
+	genesis_markup( array(
+		'open' => '<div %s>',
+		'context' => 'frontpage-five'
+	) );
+	
+	genesis_structural_wrap( 'frontpage-five' );
+	
+	genesis_widget_area( 'frontpage-five', array(
+		'before' => '<div class="container-fluid"><div class="row">',
+		'after' => '</div></div>'
+	) );
+	
+	genesis_structural_wrap( 'frontpage-five', 'close' );
+	
+	genesis_markup( array(
+		'close' => '</div>',
+		'context' => 'frontpage-five'
 	) );
 }
 

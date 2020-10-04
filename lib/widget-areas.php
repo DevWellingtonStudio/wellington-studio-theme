@@ -44,4 +44,10 @@ function bfg_register_sidebars() {
 		'name' => __( 'Front Page Four', 'bootstrap-for-genesis' ),
 		'description' => __( 'Adds content to the 4th widgetized area.', 'bootstrap-for-genesis' )
 	));
+	
+	genesis_register_sidebar( array(
+		'id' => 'frontpage-five',
+		'name' => __( 'Front Page Five', 'bootstrap-for-genesis' ),
+		'description' => __( 'Adds content to the 5th widgetized area.', 'bootstrap-for-genesis' )
+	));
 }
