@@ -148,7 +148,7 @@ function wst_do_frontpage_four() {
 	genesis_structural_wrap( 'frontpage-four' );
 
 	genesis_widget_area( 'frontpage-four', array(
-		'before' => '<div class="container-fluid"><div class="row">',
+		'before' => '<div class="container-1700"><div class="row">',
 		'after' => '</div></div>'
 	) );
 
