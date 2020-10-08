@@ -110,7 +110,8 @@
   background-color: $orange;
   margin: $marginTopx1 0 0 0 !important;
   padding: 1.618em 1.618em 1.618em 1.618em;
-  .container-fluid .row {
+  width: 100%;
+  .container-1700 .row {
     display: flex;
     align-items: center;
     section.widget_text {
@@ -132,4 +133,24 @@
   section {
     margin: 0 auto;
   }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1832px) {
+  .frontpage-three {
+    .background-graphic {
+      background-image: url(images/svg/green_circle.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      margin-top: -717px;
+      margin-left: -98px;
+      height: 1000px;
+      width: 114%;
+      position: absolute;
+      z-index: -1;
+      zoom: calc((100% / 15) * 22)
+    }
+  }
+
 }
