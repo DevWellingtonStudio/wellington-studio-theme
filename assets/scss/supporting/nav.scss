@@ -1,6 +1,20 @@
 /* Navbar
 ----------------------------------------------------------------------------- */
 
+.navbar-toggler-icon {
+    height: 1.8em;
+}
+
+.navbar-light {
+    .navbar-toggler {
+        border-color: transparent;
+        border: none;
+    }
+    .navbar-toggler-icon {
+        background-image: none !important;
+    }
+}
+
 /* Header Sub Nav */
 
 .support-link-padding {
@@ -50,8 +64,11 @@ header.site-header {
 
 /* Red Nav Color */
 .navbar-red {
-background-color: $navred
-}
+    .navbar-toggler {
+        color: rgba(0, 0, 0, .5);
+    }
+    background-color: $navred;
+    }
 .bg-red {
 background-color: $navred;
 }
@@ -89,6 +106,12 @@ background-color: $navred;
 
 /* Subnav  */
 #sub-nav-fp {
+
+    .container-fluid {
+        button.navbar-toggler {
+            margin: 0 auto;
+        }
+    }
 
     .container {
 

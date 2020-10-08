@@ -44,6 +44,9 @@ function bfg_theme_scripts() {
 		
 		wp_register_script( 'custom-js', BFG_THEME_JS . 'custom.js', array(), $version, true );
 		wp_enqueue_script('custom-js');
+		
+		wp_register_script( 'font-awesome', 'https://kit.fontawesome.com/76342ff491.js', array(), $version, true );
+		wp_enqueue_script('font-awesome');
 	}
 }
 
