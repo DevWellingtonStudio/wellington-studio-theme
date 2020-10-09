@@ -64,7 +64,7 @@ function bfg_nav_menu_markup_filter( $html, $args ) {
 	$output .= apply_filters( 'bfg_navbar_brand', bfg_navbar_brand_markup() );
  }
 
- $output .= '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#'.$data_target.'" aria-controls="'.$data_target.'" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>';
+ $output .= '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#'.$data_target.'" aria-controls="'.$data_target.'" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fas fa-2x fa-bars"></i></span></button>';
  $output .= $html;
 
  $navextra = get_theme_mod( 'navextra', false );
@@ -140,11 +140,6 @@ add_filter( 'nav_menu_link_attributes', function( $atts, $item, $args, $depth ) 
 }, 10, 4 );
 
 
-
-
-
-
-
 add_action( 'genesis_header', 'add_header_sub_nav', 12 );
 function add_header_sub_nav() {
 	$menu_locations = get_nav_menu_locations();
@@ -170,26 +165,6 @@ function add_header_sub_nav() {
 	<?php endif; ?>
 
 <?php }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Adds Footer Navigation
 add_action( 'genesis_footer', 'add_footer_nav', 11 );
@@ -229,7 +204,7 @@ if($menu_locations && $menu_locations['subnav'] !=0) :
 	<div class="container-fluid">
 	 <!-- Brand and toggle get grouped for better mobile display -->
 	 <button class="navbar-toggler subnav-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
-		<span class="navbar-toggler-icon"></span>
+		<span class="navbar-toggler-icon"><i class="fas fa-2x fa-bars"></i></span>
 	 </button>
 	 <!-- <a class="navbar-brand" href="#">Sub Navbar</a> -->
 	 <?php
