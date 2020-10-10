@@ -307,6 +307,11 @@ header.site-header {
         flex-flow: column;
         justify-content: unset;
     }
+    .navbar-brand {
+        img {
+            max-width: 70%;
+        }
+    }
 }
 
 @media (max-width: 1391px) {}
