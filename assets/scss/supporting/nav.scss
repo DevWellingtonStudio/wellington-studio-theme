@@ -16,6 +16,9 @@ button.navbar-toggler:focus {
         display: inline-flex;
         flex-flow: wrap;
         justify-content: flex-end;
+        .menu-item:nth-child(n+6) a:hover {
+            color: $navred;
+        }
     }
     .wrap {
         width: 90%;
@@ -40,6 +43,9 @@ button.navbar-toggler:focus {
 
 .support-link-padding {
     background-color: $green !important;
+    a:hover {
+        color: $black !important;
+    }
 }
 
 header.site-header {
@@ -157,7 +163,6 @@ header.site-header {
             width: 100%;
         }
     }
-
 }
 
 /* Footer Nav */
@@ -167,9 +172,7 @@ header.site-header {
 }
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-
-}
+@media (max-width: 575.98px) {}
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
