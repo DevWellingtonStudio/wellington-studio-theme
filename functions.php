@@ -41,7 +41,7 @@ function wst_childtheme_setup() {
  //* Register nav menus
  add_theme_support( 'genesis-menus', array(
  	'primary' 	=> __( 'Primary Navigation Menu', 'bootstrap-for-genesis' ),
-	'header-sub' => __( 'Header Sub', 'bootstrap-for-genesis' ),
+	/*'header-sub' => __( 'Header Sub', 'bootstrap-for-genesis' ),*/
 	'subnav'	=> __( 'Sub Navigation Menu', 'bootstrap-for-wordpress' ),
 	'footer'	=> __( 'Footer Navigaton', 'bootstrap-for-wordpress')
 	 ) );

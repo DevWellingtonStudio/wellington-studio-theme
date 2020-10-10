@@ -140,7 +140,7 @@ add_filter( 'nav_menu_link_attributes', function( $atts, $item, $args, $depth ) 
 }, 10, 4 );
 
 
-add_action( 'genesis_header', 'add_header_sub_nav', 12 );
+/*add_action( 'genesis_header', 'add_header_sub_nav', 12 );
 function add_header_sub_nav() {
 	$menu_locations = get_nav_menu_locations();
 // Sub nav renders is assigned in Menu editor
@@ -164,7 +164,7 @@ function add_header_sub_nav() {
       </nav>
 	<?php endif; ?>
 
-<?php }
+<?php }*/
 
 // Adds Footer Navigation
 add_action( 'genesis_footer', 'add_footer_nav', 11 );
