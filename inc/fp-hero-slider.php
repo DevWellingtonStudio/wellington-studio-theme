@@ -19,7 +19,7 @@ $sldr3text		= get_theme_mod('sldr3text', $default );
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="<?php if($wst_slider1 !== $default){echo $wst_slider1;} ?>" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-md-block">
           <h5><?php if($slider1title !== $default){echo $slider1title;} ?></h5>
           <p><?php if($sldr1text !== $default){echo $sldr1text;} ?></p>
         </div>
@@ -27,7 +27,7 @@ $sldr3text		= get_theme_mod('sldr3text', $default );
 		 <?php if($wst_slider2 !== $default) : ?>
        <div class="carousel-item">
          <img src="<?php if($wst_slider2 !== $default){echo $wst_slider2;} ?>" class="d-block w-100" alt="...">
-         <div class="carousel-caption d-none d-md-block">
+         <div class="carousel-caption d-md-block">
            <h5><?php if($slider2title !== $default){echo $slider2title;} ?></h5>
            <p><?php if($sldr2text !== $default){echo $sldr2text;} ?></p>
          </div>
@@ -36,7 +36,7 @@ $sldr3text		= get_theme_mod('sldr3text', $default );
 		 if($wst_slider3 !== $default) : ?>
        <div class="carousel-item">
          <img src="<?php if($wst_slider3 !== $default){echo $wst_slider3;} ?>" class="d-block w-100" alt="...">
-         <div class="carousel-caption d-none d-md-block">
+         <div class="carousel-caption d-md-block">
            <h5><?php if($slider3title !== $default){echo $slider2title;} ?></h5>
            <p><?php if($sldr3text !== $default){echo $sldr3text;} ?></p>
          </div>
