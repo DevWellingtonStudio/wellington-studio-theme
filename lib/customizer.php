@@ -17,6 +17,7 @@ add_action( 'customize_register', function( $wp_customize ) {
  include 'customizer-sections/fp-hero-slider-options.php';
  include 'customizer-sections/sub-nav-options.php';
  include 'customizer-sections/fp-mid-slider-options.php';
+ include 'customizer-sections/background-images.php';
  
 
  // Add Default Settings

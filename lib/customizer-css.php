@@ -28,7 +28,21 @@ function load_wst_customizer_css() {
 	$slider3_btn_text_color	    = get_theme_mod('slider3_btn_text_color');
 	$slider3_btn_color			= get_theme_mod('slider3_btn_color');
 	
+	$bg_img_one                 = get_theme_mod('bg_img_one');
+	$bg_img_two                 = get_theme_mod('bg_img_two');
+	$bg_img_three               = get_theme_mod('bg_img_three');
+	
 	$css_wst .= '
+	
+		#background-one {
+            background-image: url(' . $bg_img_one . ');
+        }
+        .home .site-container .site-inner .content-sidebar-wrap.row {
+            background-image: url(' . $bg_img_two . ');
+        }
+        .background-graphic {
+            background-image: url(' . $bg_img_three  . ');
+        }
 		.menu-item a {
 			color: '. $nav_link_color .';
 		}
@@ -80,9 +94,6 @@ function load_wst_customizer_css() {
 		#portrait-item-three .card .row .card-body-wrapper {
 			background-color: '. $slider3_bg .';
 		}
-		
-		
-		
 		#sub-nav-fp,
 		#wstPortraitSlider .carousel-indicators li {
 			background-color: ' . $subnav_bgcolor . ';

@@ -4,7 +4,7 @@
   .site-container {
     .site-inner {
       .content-sidebar-wrap.row {
-        background-image: url(images/svg/african_pattern-2.svg);
+        /*background-image: url(images/svg/african_pattern-2.svg);*/
         background-position: center;
         background-repeat: repeat-y;
       }
@@ -13,7 +13,7 @@
 }
 
 #background-one {
-  background-image: url(images/svg/yellow_circle.svg);
+  /*background-image: url(images/svg/yellow_circle.svg);*/
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -67,7 +67,7 @@
 .frontpage-three {
 
   .background-graphic {
-    background-image: url(images/svg/green_circle.svg);
+    /*background-image: url(images/svg/green_circle.svg);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -115,11 +115,9 @@
   .container-1700 .row {
     display: flex;
     align-items: center;
-    section.widget_text {
-      padding: 0 0 0 5.618em;
-    }
     section {
       flex-basis: 50%;
+      padding: 1.618em;
       img {
         margin: 0 auto;
         display: block;
@@ -135,10 +133,6 @@
     margin: 0 auto;
   }
 }
-
-
-
-
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {}
@@ -173,7 +167,9 @@
 }
 
 // Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+
+}
 
 @media (max-width: 1035px) {
   #wstTopSlider .carousel-inner .carousel-item .carousel-caption {
@@ -202,6 +198,13 @@
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
+  .news-excerpt .featured-image:nth-child(n+1) {
+    margin-top: 1.618em;
+  }
+  .frontpage-four .container-1700 .row section {
+    flex-basis: unset;
+    width: 100%;
+  }
   #background-one {
     top: -12px;
     width: 143%;
@@ -212,10 +215,20 @@
       font-size: 1.5rem;
     }
   }
+  .frontpage-one .container, .frontpage-two .container-2 {
+    display: initial;
+  }
+  .frontpage-three section:nth-child(n+3) {
+    float: none;
+    width: auto;
+  }
 
 }
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+  .aligncenter img, .alignleft img, .alignright img {
+    margin: 0 auto;
+  }
   #background-one {
     top: -37px;
     width: 153%;
