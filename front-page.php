@@ -80,7 +80,7 @@ function io_front_page_latest_posts() {
 	  'order'          => 'DESC',
 	  'orderby'       => 'date',
 	  'no_found_rows'  => true,
-	  'posts_per_page' => 4
+	  'posts_per_page' => 6
   ) );
 
   // The Loop
