@@ -87,7 +87,7 @@ function io_front_page_latest_posts() {
   if ( $the_query->have_posts() ) {
 	echo '<div class="news-feed-title mt_med text-center"><h2 class="news-feed">FEATURED EVENTS</h2></div>';
 	echo '<div class="container-2">';
-	echo '<div id="fp-news" class="news-fp mt row">';
+	echo '<div id="fp-news" class="news-fp mt row justify-content-center">';
 
 	while ( $the_query->have_posts() ) {
 	  $the_query->the_post();

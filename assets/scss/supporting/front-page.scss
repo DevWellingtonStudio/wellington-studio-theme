@@ -47,7 +47,6 @@
       margin: 0 auto;
       display: block;
     }
-
   }
 
 }
@@ -138,7 +137,11 @@
 @media (min-width: 576px) {}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  .news-excerpt .featured-image:nth-child(n+4) {
+    margin-top: 1.618em;
+  }
+}
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {}
@@ -167,9 +170,7 @@
 }
 
 // Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {
-
-}
+@media (max-width: 1199.98px) {}
 
 @media (max-width: 1035px) {
   #wstTopSlider .carousel-inner .carousel-item .carousel-caption {
