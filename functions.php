@@ -10,6 +10,8 @@
  *
  */
 
+add_filter( 'widget_text', 'do_shortcode' );
+
 add_action( 'genesis_setup', 'wst_childtheme_setup', 15 );
 
 function wst_childtheme_setup() {
