@@ -46,6 +46,13 @@ function bfg_theme_scripts() {
 		
 		wp_register_script( 'font-awesome', 'https://kit.fontawesome.com/76342ff491.js', array(), $version, true );
 		wp_enqueue_script('font-awesome');
+		
+		wp_register_script( 'parallax-jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', array('jquery'), '3.2.1', true );
+		wp_register_script('parallax-min-js', BFG_THEME_JS . 'parallax.min.js', array(), '1.5.0', true );
+		if(is_home() || is_front_page() ) {
+			wp_enqueue_script('parallax-jquery');
+			wp_enqueue_script('parallax-min-js');
+		}
 	}
 }
 
