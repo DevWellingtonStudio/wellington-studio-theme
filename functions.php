@@ -10,6 +10,8 @@
  *
  */
 
+add_filter( 'widget_text', 'do_shortcode' );
+
 add_action( 'genesis_setup', 'wst_childtheme_setup', 15 );
 
 function wst_childtheme_setup() {
@@ -41,7 +43,6 @@ function wst_childtheme_setup() {
  //* Register nav menus
  add_theme_support( 'genesis-menus', array(
  	'primary' 	=> __( 'Primary Navigation Menu', 'bootstrap-for-genesis' ),
-	/*'header-sub' => __( 'Header Sub', 'bootstrap-for-genesis' ),*/
 	'subnav'	=> __( 'Sub Navigation Menu', 'bootstrap-for-wordpress' ),
 	'footer'	=> __( 'Footer Navigaton', 'bootstrap-for-wordpress')
 	 ) );
