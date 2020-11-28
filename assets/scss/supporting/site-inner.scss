@@ -17,3 +17,9 @@
     z-index: 0;
   padding: $spacer*0 0;
 }
+
+.site-container {
+    max-width: 2000px;
+    margin: 0 auto;
+    background-color: $white;
+}
