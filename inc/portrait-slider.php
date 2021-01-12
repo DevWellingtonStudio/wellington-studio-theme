@@ -1,5 +1,7 @@
 <?php
 // Adds the portrait slider
+  
+  $default = '';
 ?>
 
 <div id="portrait-section">
@@ -10,6 +12,10 @@
 	 <li data-target="#wstPortraitSlider" data-slide-to="2"></li>
 	</ol>
 	<div class="carousel-inner">
+      <?php
+        $port_slider1 = get_theme_mod('port_slider1');
+        if($port_slider1 !== $default ) {
+      ?>
 	 <div id="portrait-item-one" class="carousel-item active">
 		<div id="portrait-hero" class="card">
 		 <div class="row no-gutters">
@@ -30,6 +36,10 @@
 		 </div>
 		</div>
 	 </div>
+      <?php }
+        $port_slider2 = get_theme_mod('port_slider2');
+        if($port_slider2 !== $default) {
+        ?>
 	 <div id="portrait-item-two" class="carousel-item">
 		<div id="portrait-hero" class="card">
 		 <div class="row no-gutters">
@@ -50,6 +60,10 @@
 		 </div>
 		</div>
 	 </div>
+      <?php }
+        $port_slider3 = get_theme_mod('port_slider3');
+        if($port_slider3 !== $default) {
+        ?>
 	 <div id="portrait-item-three" class="carousel-item">
 		<div id="portrait-hero" class="card">
 		 <div class="row no-gutters">
@@ -70,6 +84,7 @@
 		 </div>
 		</div>
 	 </div>
+      <?php } ?>
 	</div>
  </div>
  <!-- <a class="carousel-control-prev" href="#wstPortraitSlider" role="button" data-slide="prev">
