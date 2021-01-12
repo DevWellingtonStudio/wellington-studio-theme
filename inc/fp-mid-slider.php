@@ -11,6 +11,7 @@ $midslider3title	= get_theme_mod('midslider3title', $default);
 $midsldr3text		= get_theme_mod('midsldr3text', $default);
 
 
+if($wst_mid_slider1 !== $default) {
 ?>
 <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
 	  <ol class="carousel-indicators">
@@ -50,3 +51,4 @@ $midsldr3text		= get_theme_mod('midsldr3text', $default);
 	    <span class="sr-only">Next</span>
 	  </a>
 	</div>
+<?php } ?>
